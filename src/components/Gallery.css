@@ -1,0 +1,113 @@
+.gallery {
+  padding: clamp(4rem, 8vw, 7rem) max(1.5rem, calc((100% - 1180px) / 2));
+  background: #f1ecf6;
+}
+
+.gallery-heading {
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.gallery-heading .section-kicker {
+  margin: 0 0 0.6rem;
+  color: var(--lavender-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.gallery-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  line-height: 0.95;
+}
+
+.gallery-heading > p:last-child {
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  min-height: 240px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item span {
+  display: grid;
+  min-height: 240px;
+  place-items: center;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.gallery-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: var(--lavender-deep);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.instagram-button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@media (max-width: 760px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-item,
+  .gallery-item img,
+  .gallery-item span {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    padding-inline: 0.75rem;
+  }
+
+  .gallery-grid {
+    gap: 0.6rem;
+  }
+}

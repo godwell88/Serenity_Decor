@@ -1,0 +1,17 @@
+.services-wrap { width: 100%; margin: 0;
+     padding: clamp(4rem, 8vw, 7rem) max(1.5rem, calc((100% - 1180px) / 2)); background: #f1ecf6;
+     }
+.section-heading { 
+    max-width: 520px; 
+    margin-bottom: 2.5rem;
+     }.section-kicker { 
+        margin: 0 0 .6rem; 
+        color: var(--lavender-deep); 
+        font-size: .72rem; 
+        font-weight: 700; 
+        letter-spacing: .17em;
+         text-transform: 
+         uppercase; 
+        }.section-heading h2 { 
+            margin: 0; color: var(--ink); 
+            font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(3rem, 5vw, 4.75rem); line-height: .9; }.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid rgba(118, 80, 128, .22); border-left: 1px solid rgba(118, 80, 128, .22); }.service { min-height: 410px; position: relative; display: flex; flex-direction: column; overflow: hidden; border-right: 1px solid rgba(118, 80, 128, .22); border-bottom: 1px solid rgba(118, 80, 128, .22); background: #fff; transition: transform .3s ease, background .3s ease; }.service:hover, .service:focus-within { z-index: 1; transform: translateY(-5px); background: #fbf8fc; }.service img { width: 100%; height: 210px; object-fit: cover; transition: transform .45s ease; }.service:hover img { transform: scale(1.06); }.service-content { display: flex; flex: 1; flex-direction: column; padding: 1.55rem; }.service h3 { margin: 0; color: #33283a; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; line-height: 1; }.service p { margin: .8rem 0 1.1rem; color: #665d6b; font-size: .9rem; line-height: 1.7; }.quote-button { align-self: flex-start; margin-top: auto; padding: .66rem 1rem; border-radius: 999px; background: var(--lavender-deep); color: #fff; font-size: .76rem; font-weight: 700; letter-spacing: .04em; text-decoration: none; opacity: 0; transform: translateY(10px); transition: opacity .25s ease, transform .25s ease, background .2s ease; }.service:hover .quote-button, .service:focus-within .quote-button { opacity: 1; transform: translateY(0); }.quote-button:hover { background: #211d23; }@media (max-width: 900px) { .services { grid-template-columns: repeat(2, minmax(0, 1fr)); } }@media (max-width: 560px) { .services-wrap { padding-inline: .75rem; }.services { grid-template-columns: 1fr; }.service { min-height: 385px; }.quote-button { opacity: 1; transform: none; } }
