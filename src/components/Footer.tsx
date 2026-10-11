@@ -1,6 +1,7 @@
 import './Footer.css'
 import { motion } from 'framer-motion';
 
+
 const Icon = ({ type }: { type: 'instagram' | 'facebook' | 'whatsapp' }) => {
   const paths = {
     instagram: (
@@ -76,21 +77,7 @@ export default function Footer() {
 
 
         </div>
-        <div className="flex">
-          <p className="text-shadow-indigo-50">Check our our brands</p>
 
-          <h1>
-            <a
-              href="https://www.instagram.com/the_exquisite_hampers/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit The Exquisite Hampers on Instagram"
-            >
-              The Exquisite Hampers
-            </a>
-          </h1>
-
-        </div>
         </div>
 
     </motion.footer>
