@@ -1,6 +1,6 @@
 
 import { useEffect, useRef, useState } from "react";
-import { Menu, X, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 import logo from "@/assets/logo.png";
 
