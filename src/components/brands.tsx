@@ -1,6 +1,6 @@
 
-import cakes from "../assets/cakes.png"
-import hampers from "../assets/hampers.png"
+import cakes from "../logos/cakes.png"
+import hampers from "../logos/hampers.png"
 import { motion } from "framer-motion"
 
 const thebrands = [
